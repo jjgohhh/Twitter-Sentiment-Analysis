@@ -1,0 +1,1279 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0918.1727                               -->
+<workbook source-build='2020.3.1 (20203.20.0918.1727)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='datesenti' inline='true' name='federated.0m1cdh41tylewy1c7yb0n0vh5ixh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='datesenti' name='textscan.04wk6gj1bx8zbl196g68m1nnxp8b'>
+            <connection class='textscan' directory='C:/Users/JJ/Documents/twitter' filename='datesenti.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='string' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Airline Sentiment]' />
+            <value name='[Tweet Created]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[datesenti.csv].[airline_sentiment]' />
+              <field name='[datesenti.csv].[tweet_created]' />
+            </group>
+          </groups>
+          <relation connection='textscan.04wk6gj1bx8zbl196g68m1nnxp8b' name='datesenti.csv' table='[datesenti#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='airline_sentiment' ordinal='0' />
+              <column datatype='date' name='tweet_created' ordinal='1' />
+              <column datatype='string' name='F3' ordinal='2' />
+              <column datatype='string' name='F4' ordinal='3' />
+              <column datatype='string' name='F5' ordinal='4' />
+              <column datatype='string' name='F6' ordinal='5' />
+              <column datatype='string' name='F7' ordinal='6' />
+              <column datatype='integer' name='F8' ordinal='7' />
+              <column datatype='integer' name='F9' ordinal='8' />
+              <column datatype='integer' name='F10' ordinal='9' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='string' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Airline Sentiment]' />
+            <value name='[Tweet Created]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[datesenti.csv].[airline_sentiment]' />
+              <field name='[datesenti.csv].[tweet_created]' />
+            </group>
+          </groups>
+          <relation connection='textscan.04wk6gj1bx8zbl196g68m1nnxp8b' name='datesenti.csv' table='[datesenti#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='airline_sentiment' ordinal='0' />
+              <column datatype='date' name='tweet_created' ordinal='1' />
+              <column datatype='string' name='F3' ordinal='2' />
+              <column datatype='string' name='F4' ordinal='3' />
+              <column datatype='string' name='F5' ordinal='4' />
+              <column datatype='string' name='F6' ordinal='5' />
+              <column datatype='string' name='F7' ordinal='6' />
+              <column datatype='integer' name='F8' ordinal='7' />
+              <column datatype='integer' name='F9' ordinal='8' />
+              <column datatype='integer' name='F10' ordinal='9' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[datesenti.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[datesenti.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datesenti.csv_C128F7B29B744DD98206DFFE87C93619]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[datesenti.csv]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datesenti.csv_C128F7B29B744DD98206DFFE87C93619]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[datesenti.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datesenti.csv_C128F7B29B744DD98206DFFE87C93619]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[datesenti.csv]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datesenti.csv_C128F7B29B744DD98206DFFE87C93619]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[datesenti.csv]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datesenti.csv_C128F7B29B744DD98206DFFE87C93619]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F8]</local-name>
+            <parent-name>[datesenti.csv]</parent-name>
+            <remote-alias>F8</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datesenti.csv_C128F7B29B744DD98206DFFE87C93619]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F9</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F9]</local-name>
+            <parent-name>[datesenti.csv]</parent-name>
+            <remote-alias>F9</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datesenti.csv_C128F7B29B744DD98206DFFE87C93619]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F10</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F10]</local-name>
+            <parent-name>[datesenti.csv]</parent-name>
+            <remote-alias>F10</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datesenti.csv_C128F7B29B744DD98206DFFE87C93619]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datesenti.csv_C128F7B29B744DD98206DFFE87C93619]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[datesenti.csv_C128F7B29B744DD98206DFFE87C93619]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='datesenti.csv' datatype='table' name='[__tableau_internal_object_id__].[datesenti.csv_C128F7B29B744DD98206DFFE87C93619]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='datesenti.csv' id='datesenti.csv_C128F7B29B744DD98206DFFE87C93619'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='string' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Airline Sentiment]' />
+                  <value name='[Tweet Created]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[datesenti.csv].[airline_sentiment]' />
+                    <field name='[datesenti.csv].[tweet_created]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.04wk6gj1bx8zbl196g68m1nnxp8b' name='datesenti.csv' table='[datesenti#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='airline_sentiment' ordinal='0' />
+                    <column datatype='date' name='tweet_created' ordinal='1' />
+                    <column datatype='string' name='F3' ordinal='2' />
+                    <column datatype='string' name='F4' ordinal='3' />
+                    <column datatype='string' name='F5' ordinal='4' />
+                    <column datatype='string' name='F6' ordinal='5' />
+                    <column datatype='string' name='F7' ordinal='6' />
+                    <column datatype='integer' name='F8' ordinal='7' />
+                    <column datatype='integer' name='F9' ordinal='8' />
+                    <column datatype='integer' name='F10' ordinal='9' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Tweets' inline='true' name='federated.0zvbt941ow57jb1cy4rtd0bo6s1n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Tweets' name='textscan.18ihcnz0quf2o41c99swr11xtksz'>
+            <connection class='textscan' directory='C:/Users/JJ/Documents/twitter' filename='Tweets.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.18ihcnz0quf2o41c99swr11xtksz' name='Tweets.csv' table='[Tweets#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='tweet_id' ordinal='0' />
+            <column datatype='string' name='airline_sentiment' ordinal='1' />
+            <column datatype='real' name='airline_sentiment_confidence' ordinal='2' />
+            <column datatype='string' name='negativereason' ordinal='3' />
+            <column datatype='real' name='negativereason_confidence' ordinal='4' />
+            <column datatype='string' name='airline' ordinal='5' />
+            <column datatype='string' name='airline_sentiment_gold' ordinal='6' />
+            <column datatype='string' name='name' ordinal='7' />
+            <column datatype='string' name='negativereason_gold' ordinal='8' />
+            <column datatype='integer' name='retweet_count' ordinal='9' />
+            <column datatype='string' name='text' ordinal='10' />
+            <column datatype='string' name='tweet_coord' ordinal='11' />
+            <column datatype='date' name='tweet_created' ordinal='12' />
+            <column datatype='string' name='tweet_location' ordinal='13' />
+            <column datatype='string' name='user_timezone' ordinal='14' />
+            <column datatype='string' name='F16' ordinal='15' />
+            <column datatype='string' name='F17' ordinal='16' />
+            <column datatype='string' name='F18' ordinal='17' />
+            <column datatype='string' name='F19' ordinal='18' />
+            <column datatype='string' name='F20' ordinal='19' />
+            <column datatype='string' name='F21' ordinal='20' />
+            <column datatype='string' name='F22' ordinal='21' />
+            <column datatype='string' name='F23' ordinal='22' />
+            <column datatype='integer' name='F24' ordinal='23' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.18ihcnz0quf2o41c99swr11xtksz' name='Tweets.csv' table='[Tweets#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='tweet_id' ordinal='0' />
+            <column datatype='string' name='airline_sentiment' ordinal='1' />
+            <column datatype='real' name='airline_sentiment_confidence' ordinal='2' />
+            <column datatype='string' name='negativereason' ordinal='3' />
+            <column datatype='real' name='negativereason_confidence' ordinal='4' />
+            <column datatype='string' name='airline' ordinal='5' />
+            <column datatype='string' name='airline_sentiment_gold' ordinal='6' />
+            <column datatype='string' name='name' ordinal='7' />
+            <column datatype='string' name='negativereason_gold' ordinal='8' />
+            <column datatype='integer' name='retweet_count' ordinal='9' />
+            <column datatype='string' name='text' ordinal='10' />
+            <column datatype='string' name='tweet_coord' ordinal='11' />
+            <column datatype='date' name='tweet_created' ordinal='12' />
+            <column datatype='string' name='tweet_location' ordinal='13' />
+            <column datatype='string' name='user_timezone' ordinal='14' />
+            <column datatype='string' name='F16' ordinal='15' />
+            <column datatype='string' name='F17' ordinal='16' />
+            <column datatype='string' name='F18' ordinal='17' />
+            <column datatype='string' name='F19' ordinal='18' />
+            <column datatype='string' name='F20' ordinal='19' />
+            <column datatype='string' name='F21' ordinal='20' />
+            <column datatype='string' name='F22' ordinal='21' />
+            <column datatype='string' name='F23' ordinal='22' />
+            <column datatype='integer' name='F24' ordinal='23' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweet_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tweet_id]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>tweet_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>airline_sentiment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[airline_sentiment]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>airline_sentiment</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>airline_sentiment_confidence</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[airline_sentiment_confidence]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>airline_sentiment_confidence</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>negativereason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[negativereason]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>negativereason</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>negativereason_confidence</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[negativereason_confidence]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>negativereason_confidence</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>airline</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[airline]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>airline</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>airline_sentiment_gold</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[airline_sentiment_gold]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>airline_sentiment_gold</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>negativereason_gold</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[negativereason_gold]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>negativereason_gold</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retweet_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retweet_count]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>retweet_count</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>text</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweet_coord</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tweet_coord]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>tweet_coord</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweet_created</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[tweet_created]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>tweet_created</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tweet_location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tweet_location]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>tweet_location</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_timezone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[user_timezone]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>user_timezone</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F16</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F16]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>F16</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F17</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F17]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>F17</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F18</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F18]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>F18</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F19</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F19]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>F19</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F20</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F20]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>F20</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F21</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F21]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>F21</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F22</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F22]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>F22</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F23</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F23]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>F23</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F24</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F24]</local-name>
+            <parent-name>[Tweets.csv]</parent-name>
+            <remote-alias>F24</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Tweets.csv_A854BBAF07D941308608E6332B02849C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Tweets.csv' datatype='table' name='[__tableau_internal_object_id__].[Tweets.csv_A854BBAF07D941308608E6332B02849C]' role='measure' type='quantitative' />
+      <column caption='Airline' datatype='string' name='[airline]' role='dimension' type='nominal' />
+      <column caption='Airline Sentiment' datatype='string' name='[airline_sentiment]' role='dimension' type='nominal' />
+      <column caption='Airline Sentiment Confidence' datatype='real' name='[airline_sentiment_confidence]' role='measure' type='quantitative' />
+      <column caption='Airline Sentiment Gold' datatype='string' name='[airline_sentiment_gold]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Negativereason' datatype='string' name='[negativereason]' role='dimension' type='nominal' />
+      <column caption='Negativereason Confidence' datatype='real' name='[negativereason_confidence]' role='measure' type='quantitative' />
+      <column caption='Negativereason Gold' datatype='string' name='[negativereason_gold]' role='dimension' type='nominal' />
+      <column caption='Retweet Count' datatype='integer' name='[retweet_count]' role='measure' type='quantitative' />
+      <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+      <column caption='Tweet Coord' datatype='string' name='[tweet_coord]' role='dimension' type='nominal' />
+      <column caption='Tweet Created' datatype='date' name='[tweet_created]' role='dimension' type='ordinal' />
+      <column caption='Tweet Id' datatype='real' name='[tweet_id]' role='dimension' type='ordinal' />
+      <column caption='Tweet Location' datatype='string' name='[tweet_location]' role='dimension' type='nominal' />
+      <column caption='User Timezone' datatype='string' name='[user_timezone]' role='dimension' type='nominal' />
+      <column-instance column='[airline_sentiment]' derivation='None' name='[none:airline_sentiment:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:airline_sentiment:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;negative&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;positive&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;neutral&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Tweets.csv' id='Tweets.csv_A854BBAF07D941308608E6332B02849C'>
+            <properties context=''>
+              <relation connection='textscan.18ihcnz0quf2o41c99swr11xtksz' name='Tweets.csv' table='[Tweets#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='tweet_id' ordinal='0' />
+                  <column datatype='string' name='airline_sentiment' ordinal='1' />
+                  <column datatype='real' name='airline_sentiment_confidence' ordinal='2' />
+                  <column datatype='string' name='negativereason' ordinal='3' />
+                  <column datatype='real' name='negativereason_confidence' ordinal='4' />
+                  <column datatype='string' name='airline' ordinal='5' />
+                  <column datatype='string' name='airline_sentiment_gold' ordinal='6' />
+                  <column datatype='string' name='name' ordinal='7' />
+                  <column datatype='string' name='negativereason_gold' ordinal='8' />
+                  <column datatype='integer' name='retweet_count' ordinal='9' />
+                  <column datatype='string' name='text' ordinal='10' />
+                  <column datatype='string' name='tweet_coord' ordinal='11' />
+                  <column datatype='date' name='tweet_created' ordinal='12' />
+                  <column datatype='string' name='tweet_location' ordinal='13' />
+                  <column datatype='string' name='user_timezone' ordinal='14' />
+                  <column datatype='string' name='F16' ordinal='15' />
+                  <column datatype='string' name='F17' ordinal='16' />
+                  <column datatype='string' name='F18' ordinal='17' />
+                  <column datatype='string' name='F19' ordinal='18' />
+                  <column datatype='string' name='F20' ordinal='19' />
+                  <column datatype='string' name='F21' ordinal='20' />
+                  <column datatype='string' name='F22' ordinal='21' />
+                  <column datatype='string' name='F23' ordinal='22' />
+                  <column datatype='integer' name='F24' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Count of Airline Sentiment'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Tweets' name='federated.0zvbt941ow57jb1cy4rtd0bo6s1n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvbt941ow57jb1cy4rtd0bo6s1n'>
+            <column caption='Airline' datatype='string' name='[airline]' role='dimension' type='nominal' />
+            <column caption='Airline Sentiment' datatype='string' name='[airline_sentiment]' role='dimension' type='nominal' />
+            <column-instance column='[airline_sentiment]' derivation='Count' name='[cnt:airline_sentiment:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[airline]' derivation='None' name='[none:airline:nk]' pivot='key' type='nominal' />
+            <column-instance column='[airline_sentiment]' derivation='None' name='[none:airline_sentiment:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[none:airline_sentiment:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[cnt:airline_sentiment:qk]</rows>
+        <cols>[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[none:airline:nk]</cols>
+      </table>
+      <simple-id uuid='{92BCF197-4E6C-4401-AF96-D81A7AB14EEE}' />
+    </worksheet>
+    <worksheet name='Count of Negative Reasons '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Tweets' name='federated.0zvbt941ow57jb1cy4rtd0bo6s1n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvbt941ow57jb1cy4rtd0bo6s1n'>
+            <column caption='Airline' datatype='string' name='[airline]' role='dimension' type='nominal' />
+            <column-instance column='[negativereason]' derivation='Count' name='[cnt:negativereason:qk]' pivot='key' type='quantitative' />
+            <column caption='Negativereason' datatype='string' name='[negativereason]' role='dimension' type='nominal' />
+            <column-instance column='[airline]' derivation='None' name='[none:airline:nk]' pivot='key' type='nominal' />
+            <column-instance column='[negativereason]' derivation='None' name='[none:negativereason:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[none:negativereason:nk]'>
+            <groupfilter from='&quot;Bad Flight&quot;' function='range' level='[none:negativereason:nk]' to='&quot;Lost Luggage&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[none:negativereason:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[none:airline:nk]' />
+              <text column='[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[none:airline:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[cnt:negativereason:qk]</rows>
+        <cols>[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[none:airline:nk]</cols>
+      </table>
+      <simple-id uuid='{7F17A240-071E-44B6-B485-5902D6414682}' />
+    </worksheet>
+    <worksheet name='Count of tweets over time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Tweets' name='federated.0zvbt941ow57jb1cy4rtd0bo6s1n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvbt941ow57jb1cy4rtd0bo6s1n'>
+            <column-instance column='[tweet_created]' derivation='Count' name='[cnt:tweet_created:qk]' pivot='key' type='quantitative' />
+            <column caption='Negativereason' datatype='string' name='[negativereason]' role='dimension' type='nominal' />
+            <column-instance column='[negativereason]' derivation='None' name='[none:negativereason:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tweet_created]' derivation='Day-Trunc' name='[tdy:tweet_created:qk]' pivot='key' type='quantitative' />
+            <column caption='Tweet Created' datatype='date' name='[tweet_created]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[none:negativereason:nk]'>
+            <groupfilter from='&quot;Bad Flight&quot;' function='range' level='[none:negativereason:nk]' to='&quot;Lost Luggage&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[none:negativereason:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[cnt:tweet_created:qk]</rows>
+        <cols>[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[tdy:tweet_created:qk]</cols>
+      </table>
+      <simple-id uuid='{95489734-0D07-4474-9F21-F774D4C1387B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Count of Negative Reasons '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[none:airline:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C81C8394-EE53-40AB-8C25-9B4515A088CB}' />
+    </window>
+    <window class='worksheet' name='Count of Airline Sentiment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0zvbt941ow57jb1cy4rtd0bo6s1n].[none:airline_sentiment:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B1A85BF7-BC9B-4D55-ACE1-22D60D8FA546}' />
+    </window>
+    <window class='worksheet' name='Count of tweets over time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{071BF18E-305A-4B25-93D0-C71D75C50B13}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Count of Airline Sentiment' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAPO0lEQVR4nO3d228b6XkG8GeGZ4oSdSBFnY+WLcuyJcuSbfls7252s20WWCMoghbYFr3K
+      XVOgf0CBAr1qc5WbFkgLBJugSHfRbLst2saHdeT1QWs7tnWwbMk6UhJFkZIoUqR4mJleLKzY
+      hiMS1XAk83t+gIGxJXzfyyEf85sZcl5J0zQNRAKSJEmSd7sIot3EAJDQGAASGgNAQmMASGgM
+      wFsgszaLH//tjzG9nkJ8bQn+pcjWzzambiOxFsBcMLLNCPT7SDwNuvdNDf4v7j2bhtb8Hr7T
+      mMFC2gUpHsZGOIq6ilXYS5sxn/YivTyMxYVVtPZegE8O4cqtYRy/8AHqKxy7/RD2JJ4GfRto
+      CobHp9DSfRTT39zBetCPmaUwrn3xGYr2HYIDQGx5GrPBGG7ffYBjR9sweO8WfvHPP0M4PI/P
+      v7y6249gTzPvdgG0PSURxmxwE7I/DHV9FsvpKgBAcVUTWnwlSK7+7nfNdgecVhtkWUaZ14fm
+      3nMoL6/cpcrfDlwC7XFKOoFQJAGfpxyR4DwyFickkxXpeBReXxXU+AoUDdjQnEjGVlBZUYZw
+      dBMuUxrj0wsor2lGfaV7tx/GniRJksQAkLD2xDGApmlQVXW3yyBB7doxgKqqUBRlKwCyvOtZ
+      JAHptgTKxJfx71+N4OMPTmP0t4Pwr6TRe+oUUoGnGJoIoKnzGGosEdx6OA5PQzuOtjdAwrdB
+      UFUVZjOPx8lYOi6BVEyMz8LhsCC1sY6MvRIXTzRjeiaE+ZUELl06jdjiPJ7MLuP8pYuwbwSx
+      oegzM9FO6BKASGAKCWsFHLKCeCoFu60IFpcLWmITFqsNZrMdFjkFzWSF1WyGww6k0nrMTLQz
+      ugRA1WRsri3C7/cjHM1gJTiNsYdP4fSVQ9tcx9Nno9iQ3CiVkxgdn8BCRILLpsfMRDuj62nQ
+      SGQdbncxouElBDdUNNVVQ0lGMTsfRk1DPRymDKam/Civrkdp0bcJ4DEA7ZY9cR2AAaDdsieu
+      AxDtJgaAhMYAkNAYABIaA0BCYwBIaAwACY0n3wvM8FQQC6GobuN1NleixlOs23h7DQNQYK7e
+      n8K1B1O6jfej758o6ABwCURCYwBIaAwACY0BIKExACQ0BoCExgCQ0BgAEhoDQEJjAEhoDAAJ
+      jQEgoTEAJDQGgITGAJDQGAASGgNAQmMASGgMAAmNASChMQAkNAaAhKbDbVFUzD59jGdzy3B6
+      GtHVZMONGyNw+qrR33MA9wcGEDeX4GT/MUw+uIVAVEXXiTPwlVh3PjXRDukQAAk1rZ3w1Udx
+      99Ek0tEk9ve/g1avFcn5IbgOnsP+9DyWZ0aRcLfjbLuMicACKosbXxmF/br3rkJ+bnQJQCax
+      ivsPRuHy1sFkM2H68QCewY7eegecVXbY4jaEo0HYip2wWFSoSgSapr3SJ5jNsvWh937MKArS
+      6cLtaLjzAKgZLC+vwVdbg8n5IBrcVahvbERwaRk2jxdzj+5jxZJEQ1sbgiPDGAmbYPfsgyzL
+      kGWZLZJ0pnfDcbPJBKu1cJerO3/VSSaUlpUitBZDX89RlNg0JBaX0H7oCEpKi9Ddbsam5ISv
+      ohTFXRLCcQ211RU6lE60czoEQEJxmRfFZd6tf6pvbNraLqus2douKvWiqHTHMxLphqdBSWgM
+      AAmNASChMQAkNAaAhMYAkNAYABIaA0BCYwBIaAwACY0BIKExACQ0BoCExgCQ0BgAEhoDQEJj
+      AEhoDAAJjQEgoTEAJDQGgITGAJDQGAASGgNAQmMASGgMAAmNASChMQAkNAaAhMYAkNAYABIa
+      A0BCYwBIaDoEQEMyHkUgEEAskYKmZrASCiIaT0LTNMTWwlhZi0HTgM1YBMHQKpTCbTpIbxkd
+      OtNpCC8tIhRNYGRiDt11DowENqFmFJzoasDdB5OwmRW0dR7C+OMRWK0S1ho7sb+2bOdTE+2Q
+      DgGQUeH1wL84And5LVZW19FzvBeLY0NYmZlDQ08/fHE/AgvPUNTUhU6vhtG5EFTVDVVVt9qk
+      FnIvWiPp3SZVYZvULDQNZnsxOg4dwsMnkyizAWlFRUZVYLXKWE1mkFEyMFusyKRSUBUJsiRD
+      kiSYTCZomra1TTsny5K+45lMBd3CVocAKBgfvg//chRySRWqG9wYuPI/cHoa0Na+H0+uXsGC
+      1Y3+U31YGxzA9Wmg6/hpSNK3T9SL//lf/J12St/9KKGwn5udB0A2o737JNpf+qf3v9uwtX3u
+      /Q+3tnvOvrPj6Yj0xNOgJDQGgITGAJDQCvfwnvJueCqo6+nrzuZKww+4GQD6f/vrf/oKaUW/
+      6w6f/80fwWwyNgBcApHQGAASGgNAQmMASGgMAAmNASChMQAkNAaAhMYAkNAYABLanvsoRGAl
+      htVoQrfxqspdKCt26DYeFZY9F4Avbj7Ff90Z1228H350DN892abbeFRYuAQioTEAJDQGgITG
+      AJDQGAASGgNAQmMASGgMAAmNASChMQAkNAaAhMYAkNAYABIaA0BCYwBIaAwACY0BIKHp0iY1
+      Gl7Aw6GnKG88hH2VMm7f/C3g9uJU72FMPh5ERK5Az5E2BCeGMBHKoK/vKJwWZo92ny6NslMZ
+      E/pOn8F6cBabkWXUHjmLCyePAmvPEXHuQ7Ujifm555had6C7pRwTUws7n5ZIB7r0CS6vKMPk
+      xARqGlugJhcwNnoTi3NV6CzLwFt7AOUbKcwvz6DY14WiEgXaWhCqqkJRlK0+wS/626qqsvOS
+      XpJRFKRSKV3H3Mv07hO83f7Tu7NzOp2Cqhi7MtBlCeSfnEBRVQt8bjsiYQXvvXsQIw/uQrGX
+      YmkuAJMUgt1dheCiHzGzBZAdkGUZsixvvfhf9KKVZX37BZtNJlitVl3H3MtkWd8X0Hb7T+9W
+      FhaLFWaTsQHQYTYVm/EYhr65iat3HsNuk3Dv69/AWtGEirqD8KRnsKwUo66+BW2eDIZmY2hv
+      rd35tEQ60OEdwIS27hN4+cYjZy5c2tpu6zqxtV3V0omqlp3PSKQXnoohoeUUgM1YBOsbSWhq
+      AsFQNN81ERkm6xIovbmKK5//KxZlD9qqMgik2vGDPzhiRG0FYzEcxbUH07qNV+Nx4eLRZt3G
+      E1nWAEiyGeU+HzJqCYo9Feg91GlEXQUlsBLDL6+P6DZez/5qBkAnWZdAZmsxOjr3IzT7FI8f
+      3sfw+KIRdREZIqezQGoqjdbeC+jvbILJbMl3TUSGyekg2OxyYmlkEJ999hkeji/luyYiw+QU
+      AKerHHaTDWfO90A2iXNVlQpfTgEITo/DPxdCNLOB8aGZfNdEZJicAuCpa0Z5uYYrX9zGkVMH
+      810TkWFyCkAiGkJoPQ5oKoJLwXzXRGSYnM4CKckM2vrOo7O1Bq5Sb75rIjJMTgHIZJIIzvsx
+      Y06jWnahrNie77qIDJFTAGRZRTi4BIdFgbOyNd81ERkmawA0TYW7oQt//mf7oQGwOVwGlEVk
+      jKwBSKwv4P69p3g2NoZNAIfPfA/nuhoMKI0o/7IGwOmuw+EOBY2HelHvVTA0smFEXUSGyBqA
+      zdgC/uWnP8WC5EZ9hRmNxz4GPwxNhSJrAGxOHy5/8gmWYkBFWRHcZR4j6jLED//+S8QS+t0x
+      4h/+6g9RZOdHRd4mOXwfwAQtHsaN649Q5StHa9cZHG2rMqK2vIslUojG9QuApvd9QijvcroS
+      bLFa4Cgpg8/nQ4nTlu+aiAyT03UAV3UrzvU5oQBwOfgWT4Ujp3eATCyMX336OdKmNQwOBfJd
+      E5FhcgrAengFDmcRloPLSGxs5rsmIsNkDYCmqvC0dOB4/37MTiXx7kV+HJoKR5YAaBgfvIrJ
+      dQmb0RBS0QDG5taMqYzIAFnfAZbmlqDE/Xi26sYnf/oB5h49N6IuIkNkCYCEnoun8WjgHs69
+      dx7JYBQdpzqMqYzIAFlPgxZ5mvGDP3lxE6ajOJzngoiMlNu9Qdfm8Y9/9xOMTT7A1W/m8l0T
+      kWFyCsDKvB+KasJmOoElfyjfNREZJqcAVO3rQFOzCwNXn+DCu1wEUeHIKQCxlQACq3EU2WXM
+      zvJKMBWOnD4LlI7H0Xzsxb1BdWgqQ7RH5PRqthQ54L/xNX45OogDve/g+MGal36qYubJI4z7
+      lwGXD/1tbvxmcBT2slqc6d2Hm7++jqSlGP1nT+LZnRsIJTQcOXketWW8swTtvqwBSCVWEYqZ
+      cLjrCDIAvBVFr/2GhIb2btS0JDD0ZBKLc2H0v/8hAmOPsPp8FL6+D1Cd9CM0/RhS3TG845Mw
+      Nj+PmtIWaJq29ed37T31/VD9q2O//kNdp/q9c2l6f1Fgu8ek9/7DdnPpa9vnKk+yBEBDJLSE
+      5+OTWFhYRAZAh82Hhkr3K7+ViIQwsxhGW3s7lseHoaSSUBUNqtUKZJJQMhlosglQ01AygCaZ
+      th7s6w9aU/V9AlVNg6K8ufew3t9fURQFyhv63Or9pGrY5jHpvf9UY/cfNL2br24v6zuAxeqC
+      p6IMxZ4alBbbUVZZ+tpvqJh8Mor5WArza0mc7azF3dsDKK5ug7elGgt3vsYTczn6jh2BNnwP
+      t4Y0HOvte6VPsCRJW32CJZ373JpkGRbLm3saSDrva7PZ/Ma5TCZ9ex9L0jaPycj9p+tM3+4/
+      o/sEZwmAhFJfHdqkNG48nENHx37Yba9/I8yEzv7zeLlx0rlL725t95y+uLXd1n3ylXaqRLst
+      p7ipkoZ4cBb/8at/w6MJNsigwpF1CZTcCGFuYQNenw9pAMVOfiWSCkfWAJisRais8sJiMSGt
+      JCEZfJROlE9Zl0CSpsE/MYzr177Ez37xn1hPvvmMANHbKOtp0Cuf/gSPlSZ8/+Pv4fa1RfQd
+      qDamMiIDZP1CzHuf/AiX+1vw8NY3mJl7iPvsEkkFJOsxgGy2orWzF62dvdDUDBJcAlEByboE
+      evzVABwNXqgmLw40euB08MNwVDiyvporKs34+ac/x6riRHWFC0fOfYQL3U0GlEaUf1mvBNd2
+      nMJf/GU7njwdR1yzoftQozGVERkgpyvB0eVpjM2uwr45jf8eGM93TUSGySkAZrMZkdUwlgJB
+      mO28OzQVjpyOaN31h/HHl6sQScqo8VXkuyYiw+T0DqCkU7AWlaPW50Yikc53TUSGyfoOoKTj
+      eHD91wjIXrTXpDE8U4bLH7JLGBWG7AHIJOCfncOivAGL4sHJUweMqIvIEFmXQFZHBd6//BFK
+      5Q3M+2cx7V82oi4iQ/wfHFJVk8AaujQAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Count of Negative Reasons ' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Count of tweets over time' width='192'>
+      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
+      9ZJ0I/wfyRxLcAUWAToAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
